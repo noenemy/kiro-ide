@@ -1,38 +1,57 @@
-## Introduction to ESEP Kiro CLI + MCP Workshop
+## Introduction to ESEP Kiro IDE Workshop
 
 ESEP는 Enterprise Support Experts Program의 약자로서, AWS Enterprise Support 고객사들의 워크로드 운영에서 얻은 경험과 베스트 프랙티스 사례를 다른 Enterprise Support 고객사분들께 전파하고 도움을 드리기 위한 컨설팅 프로그램입니다.
 
-ESEP 프로그램 중에 하나로서 이 실습에서는 Kiro CLI와 MCP 서버를 연동해서 AWS 클라우드 운영시 사용하는 방법을 알아보도록 하겠습니다.
+ESEP 프로그램 중에 하나로서 이 실습에서는 Kiro IDE를 이용해서 바이브 코딩 및 스펙기반 코딩을 하는 방법을 알아보도록 하겠습니다.
 
 다른 ESEP 및 Gen AI 워크샵을 원하실 경우 담당 Technical Account Manager에게 문의주시기 바랍니다.
 
 본 실습은 다음과 같은 내용을 포함합니다. 
 
-<li>Lab 1 - Kiro CLI 실습</li>
-<li>Lab 2 - DDB 트러블슈팅 + MCP 서버로 질의하기 </li>
-<li>Lab 3 - MCP 서버 만들기 실습</li>
+<li>Lab 1 - Kiro IDE 실습</li>
+<li>Lab 2 - Kiro IDE 실습</li>
+<li>Lab 3 - Kiro IDE 실습</li>
 
 <img src="https://kiro.dev/images/home/cli.png" width="600">
 
-Kiro 를 사용하여 git, npm, 및 docker와 같은 수백 개의 인기 있는 CLIs에 대한 완료를 활성화할 수 있습니다
+## Kiro IDE 소개
+Kiro는 AI 기반의 개발 환경(IDE)으로, 개발자가 코드를 작성하고 설계하는 전 과정을 지원합니다.
 
-Kiro CLI 는 컨텍스트 정보를 통합하여 Kiro 에 사용 사례에 대한 향상된 이해를 제공하여 관련 컨텍스트 인식 응답을 제공할 수 있습니다. 
+### 핵심 기능
 
-입력을 시작하면 Kiro 는 컨텍스트와 관련된 하위 명령, 옵션 및 인수를 채웁니다.
+### 1. Spec (스펙 기반 개발)
 
-자동 완성, Kiro 채팅 및 인라인 zsh 완성과 같은 기능을 제공하는 AppImage 및 Ubuntu 패키지를 포함하여 macOS 및 특정 Linux 환경에 명령줄용 Kiro 를 설치할 수 있습니다. 
+기능 개발을 요구사항 → 설계 → 구현 태스크의 3단계로 구조화합니다.
+에이전트와 반복적으로 협업하며 점진적으로 기능을 완성해 나갑니다.
+복잡한 기능도 체계적으로 관리할 수 있어 팀 단위 개발에 적합합니다.
 
-Kiro CLI를 사용하여 다음을 수행할 수 있습니다.
+### 2. Steering (스티어링)
 
-<li> 터미널 환경 내에서 자연어 대화, 질문 및 응답을 통해 채팅할 수 있는 명령줄 인터페이스입니다.
+프로젝트의 코딩 표준, 빌드/테스트 방법, 팀 규칙 등을 마크다운 파일로 정의합니다.
+AI가 코드를 생성하거나 수정할 때 이 규칙을 자동으로 참고합니다.
+항상 적용 / 특정 파일 매칭 시 적용 / 수동 적용의 세 가지 모드를 지원합니다.
 
-<li> 자연어 지침을 실행 가능한 쉘 코드 조각으로 변환합니다.
+### 3. Hooks (에이전트 훅)
 
-<li> 명령 프롬프트에 입력할 때 인기 있는 CLIs에 대한 완료와 함께 인라인 제안.
+IDE 이벤트에 반응하여 자동으로 에이전트 액션을 실행합니다.
+예시: TypeScript 파일 저장 시 자동 린트 실행, 태스크 완료 후 테스트 실행
+파일 변경, 프롬프트 제출, 도구 사용 전/후 등 다양한 이벤트를 지원합니다.
 
-자세한 내용은 지원되는 명령줄 환경 및 Kiro CLI 공식 문서를 참조하세요.
+### 4. MCP (Model Context Protocol) 연동
 
-https://kiro.dev/docs/cli/ 
+외부 MCP 서버를 연결하여 AI의 기능을 확장할 수 있습니다.
+설정 파일 하나로 다양한 도구와 데이터 소스를 통합합니다.
 
+### 5. 자율성 모드
 
+모드	설명
+- Autopilot	AI가 파일을 자율적으로 수정
+- Supervised	변경 사항 적용 후 되돌릴 기회 제공
 
+## 주요 활용 시나리오
+- 코드 작성, 수정, 리팩토링
+- 버그 분석 및 디버깅
+- 프로젝트 구조 탐색 및 이해
+- 셸 명령어 실행 및 자동화
+- 웹 검색을 통한 최신 기술 정보 조회
+- 이미지, PDF 등 문서 첨부를 통한 컨텍스트 공유
