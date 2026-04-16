@@ -16,7 +16,7 @@
 
 7. 워크샵 화면으로 전환 되었습니다.
 
-8. 좌측 하단의 AWS account assesss 메뉴에서 CLI 환경을 위한 Access Key와 Secret Access Key를 확인할 수 있습니다.
+8. 좌측 하단의 AWS account assesss 메뉴에서 CLI 환경을 위한 Access Key와 Secret Access Key, Session Token 정보를 복사합니다.
 
 ![kiro](https://github.com/noenemy/kiro-ide/blob/main/00.kiro-ide-install/images/get-credentials.png)  
 
@@ -55,55 +55,19 @@
   버전 정보가 나오면 설치되어 있는 것입니다. 나오지 않으면 먼저 AWS CLI를 설치                              
   (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)합니다.                    
                                                                                                             
-  Step 4: 명명된 프로파일 생성                                                                              
-  ```bash                                                                                         
-  aws configure --profile kirodemo                                                                              
-   ```
-                                                                                                           
-  아래 4가지를 순서대로 입력합니다:                                                                         
-
-```bash 
-  AWS Access Key ID [None]: {복사한 값 입력}                                                           
-  AWS Secret Access Key [None]:    {복사한 값 입력}                                
-  Default region name [None]: ap-northeast-2                                                                
-  Default output format [None]: json                                                                        
-```
-                                                                                                            
-  Step 5: 프로파일 활성화                                                                                   
-                                                                                                            
-  같은 터미널에서:                                                                                          
-  ```bash                                                                                                             
-  export AWS_PROFILE=kirodemo                                                                                   
-  ```
-                                                                                                            
-  Step 6: 연결 확인                                                                                         
+  Step 4: 앞에서 워크샵 이벤트 페이지에서 복사한 AWS Access Key 및 Session Token 정보를 터미널에 붙여넣기 합니다. (이 토큰 정보는 현재 Terminal 창에서만 유효합니다. 새로운 터미널에서 사용하려면 다시 붙여넣기 해야 합니다.)
+                                  
+  Step 5: 연결 확인                                                                                         
   ```bash                                                                                           
   aws sts get-caller-identity                                                                               
 ```
                                                                                                           
   정상이면 아래와 같이 출력됩니다:                                                                                                 
-                                                                                                            
-  Step 7: 매번 export 하지 않으려면                                                                         
-                                                                                                            
-  Kiro IDE 메뉴 하단의 환경설정 아이콘을 클릭한 후 검색창에 terminal.integrated.env 입력 후 해당 OS 항목에  
-  추가:                                                                                                     
-                                                                                                            
-  macOS:                                                                                                    
-  ```bash                                                                                                              
-  {                                                                                                         
-      "terminal.integrated.env.osx": {                                                                      
-          "AWS_PROFILE": "kirodemo"                                                                             
-      }                                                                                                     
-  }                                                                                                         
-   ```
-                                                                                                           
-  Windows:                                                                                                  
-  ```bash                                                                                                        
-  {                                                                                                         
-      "terminal.integrated.env.windows": {                                                                  
-          "AWS_PROFILE": "kirodemo"                                                                             
-      }                                                                                                     
-  }
-  ```                                                                                                           
-                                                                                                            
-  이렇게 하면 Kiro IDE에서 새 터미널을 열 때마다 자동으로 demo 프로파일이 적용됩니다.  
+ ![kiro](https://github.com/noenemy/kiro-ide/blob/main/00.kiro-ide-install/images/kiro-profile.png)  
+
+
+ 이제 Kiro IDE를 이용해서 실습을 진행할 준비가 되었습니다!
+ Happy Coding!!!
+
+
+
