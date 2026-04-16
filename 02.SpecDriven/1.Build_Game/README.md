@@ -40,10 +40,10 @@ Steering 문서를 만들어 AI에게 일관된 지시사항을 전달합니다.
 3. 원하는 규칙을 추가할 수 있습니다. 이 랩에서는 다음 규칙을 프롬프트에 추가합니다.
 
 ```
-Please add a few things to the steering file. 
-When doing development, keep it as minimal as possible for prototyping. 
-Use Python as the language of choice unless there is another option that is far more efficient. Please use UV for python.
-Use English to provide responses.
+Steering 파일에 다음 내용을 추가해 주세요.
+개발 시 프로토타이핑 목적으로 최대한 간결하게 구현해 주세요.
+언어는 Python을 기본으로 사용하되, 훨씬 효율적인 대안이 있는 경우에만 다른 언어를 사용해 주세요. Python 패키지 관리는 UV를 사용해 주세요.
+응답은 한국어로 작성해 주세요.
 ```
 
 ![steering-2](images/steering-2.png)
@@ -57,7 +57,7 @@ Use English to provide responses.
 채팅창에 프롬프트를 입력하면 `requirements.md` 파일이 생성됩니다.
 
 ```
-Create a sudoku application that is easy to run on the web and add an auto solve feature
+웹에서 쉽게 실행할 수 있는 스도쿠 애플리케이션을 만들어 주세요. 자동 풀기 기능도 추가해 주세요.
 ```
 
 ![spec-driven-1](images/spec-driven-1.png)
@@ -82,7 +82,7 @@ Create a sudoku application that is easy to run on the web and add an auto solve
 태스크 생성이 완료되면 **Start Task** 또는 **Run all tasks**를 선택하거나, 채팅창에서 직접 지시할 수 있습니다.
 
 ```
-Run tasks 1 to 11
+태스크 1부터 11까지 실행해 주세요 (선택한 LLM에 따라 생성되는 태스크 수가 다를 수 있습니다)
 ```
 
 > [!NOTE]
