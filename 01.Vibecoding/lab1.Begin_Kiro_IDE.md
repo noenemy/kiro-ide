@@ -23,7 +23,7 @@ Terminal → New Terminal 클릭
 * 워크샵 이벤트 페이지에서 복사한 AWS Access Key 및 Session Token 정보를 터미널에 붙여넣기 합니다. (이 토큰 정보는 현재 Terminal 창에서만 유효합니다. 새로운 터미널에서 사용하려면 다시 붙여넣기 해야 합니다.)
 
 * 다음 명령으로 STS 토큰 정보를 확인합니다.
-```                                                                                           
+```                                                                                         
   aws sts get-caller-identity                                                                      ```
        
 
