@@ -85,7 +85,7 @@
                                                                                                             
   Step 7: 매번 export 하지 않으려면                                                                         
                                                                                                             
-  Kiro IDE에서 File → Preferences → Settings 열고, 검색창에 terminal.integrated.env 입력 후 해당 OS 항목에  
+  Kiro IDE 메뉴 하단의 환경설정 아이콘을 클릭한 후 검색창에 terminal.integrated.env 입력 후 해당 OS 항목에  
   추가:                                                                                                     
                                                                                                             
   macOS:                                                                                                    
