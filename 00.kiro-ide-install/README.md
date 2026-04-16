@@ -49,32 +49,38 @@
                                                                                                             
   ### Step 3: AWS CLI 설치 확인                                                                             
   ```bash                                                                                                   
-  aws --version                                                                                             
+  aws --version
+  ```                                                                                             
                                                                                                             
   버전 정보가 나오면 설치되어 있는 것입니다. 나오지 않으면 먼저 AWS CLI를 설치                              
   (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)합니다.                    
                                                                                                             
   Step 4: 명명된 프로파일 생성                                                                              
-                                                                                                            
-  aws configure --profile demo                                                                              
-                                                                                                            
+  ```bash                                                                                         
+  aws configure --profile kirodemo                                                                              
+   ```
+                                                                                                           
   아래 4가지를 순서대로 입력합니다:                                                                         
-                                                                                                            
+
+```bash 
   AWS Access Key ID [None]: {복사한 값 입력}                                                           
   AWS Secret Access Key [None]:    {복사한 값 입력}                                
   Default region name [None]: ap-northeast-2                                                                
   Default output format [None]: json                                                                        
+```
                                                                                                             
   Step 5: 프로파일 활성화                                                                                   
                                                                                                             
   같은 터미널에서:                                                                                          
-                                                                                                            
-  export AWS_PROFILE=demo                                                                                   
+  ```bash                                                                                                             
+  export AWS_PROFILE=kirodemo                                                                                   
+  ```
                                                                                                             
   Step 6: 연결 확인                                                                                         
-                                                                                                            
+  ```bash                                                                                           
   aws sts get-caller-identity                                                                               
-                                                                                                            
+```
+                                                                                                          
   정상이면 아래와 같이 출력됩니다:                                                                                                 
                                                                                                             
   Step 7: 매번 export 하지 않으려면                                                                         
@@ -83,19 +89,21 @@
   추가:                                                                                                     
                                                                                                             
   macOS:                                                                                                    
-                                                                                                            
+  ```bash                                                                                                              
   {                                                                                                         
       "terminal.integrated.env.osx": {                                                                      
-          "AWS_PROFILE": "demo"                                                                             
+          "AWS_PROFILE": "kirodemo"                                                                             
       }                                                                                                     
   }                                                                                                         
-                                                                                                            
+   ```
+                                                                                                           
   Windows:                                                                                                  
-                                                                                                            
+  ```bash                                                                                                        
   {                                                                                                         
       "terminal.integrated.env.windows": {                                                                  
-          "AWS_PROFILE": "demo"                                                                             
+          "AWS_PROFILE": "kirodemo"                                                                             
       }                                                                                                     
-  }                                                                                                         
+  }
+  ```                                                                                                           
                                                                                                             
   이렇게 하면 Kiro IDE에서 새 터미널을 열 때마다 자동으로 demo 프로파일이 적용됩니다.  
