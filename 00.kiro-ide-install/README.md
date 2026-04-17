@@ -25,7 +25,7 @@
 
 ## Kiro IDE 설치하기
      
-  1. kiro.dev (https://kiro.dev)에서 설치 파일을 다운로드합니다.                                            
+  1. kiro.dev (https://kiro.dev) 에서 설치 파일을 다운로드합니다.                                            
   2. 다운로드한 파일을 열고 운영체제(Windows, macOS, Linux)에 맞는 설치 안내를 따릅니다.                    
   
   3. Kiro IDE를 열고 코딩을 시작하세요! 
