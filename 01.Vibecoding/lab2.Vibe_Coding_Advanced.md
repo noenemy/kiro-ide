@@ -21,9 +21,10 @@ Lab 1에서는 응답 언어와 역할에 대한 Steering만 설정했습니다.
 
 Kiro IDE 채팅창에 다음과 같이 입력합니다.
 
-```
+
 .kiro/steering/ 폴더에 coding-standards.md 라는 Steering 파일을 만들어주세요. 내용은 다음과 같습니다:
 
+```
 ## 코딩 표준
 
 ### Python
