@@ -35,7 +35,20 @@
 
 ---
 
-## Kiro IDE에서 AWS 명명된 프로파일 설정하기                                                              
+## AWS Builder ID 만들기
+> 
+> Kiro를 사용하려면 로그인이 필요합니다. 이를 위해 아래 사이트에서 AWS Builder ID를 생성해주세요.
+>
+> https://aws.amazon.com/ko/builder/
+>   
+> 개인 메일 계정을 사용하시기를 추천 드립니다. 무료로 Kiro IDE와 Kiro CLI를 사용하실 수 있습니다.
+>
+
+생성한 Builder ID를 이용해서 Kiro IDE 실행 후 로그인해주세요. 이제 Kiro를 무료로 사용할 수 있습니다.
+
+---
+
+## Kiro IDE에서 AWS 프로파일 설정하기                                                              
                                                                                                             
   ### Step 1: Kiro IDE 실행                                                                                 
   Kiro IDE를 실행합니다. 프로젝트 폴더를 열거나 새 폴더를 생성합니다.                                       
